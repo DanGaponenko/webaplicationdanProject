@@ -1,0 +1,495 @@
+﻿@keyframes vibrate-3 {
+    0% {
+        transform: translate(0);
+    }
+
+    10% {
+        transform: translate(-2px, -2px);
+    }
+
+    20% {
+        transform: translate(2px, -2px);
+    }
+
+    30% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(2px, 2px);
+    }
+
+    50% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, -2px);
+    }
+
+    70% {
+        transform: translate(-2px, 2px);
+    }
+
+    80% {
+        transform: translate(-2px, -2px);
+    }
+
+    90% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes bg-pan-tl {
+    0% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+@keyframes bg-pan-left {
+    0% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes tracking-in-contract-bck-top {
+    0% {
+        letter-spacing: 1em;
+        transform: translateZ(400px) translateY(-300px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes firstanimation {
+    10% {
+        color: red
+    }
+
+    20% {
+        color: hotpink
+    }
+
+    30% {
+        color: purple
+    }
+
+    40% {
+        color: blue
+    }
+
+    50% {
+        color: lightseagreen
+    }
+
+    60% {
+        color: green
+    }
+
+    70% {
+        color: greenyellow
+    }
+
+    80% {
+        color: yellow
+    }
+
+    90% {
+        color: orange
+    }
+
+    100% {
+        color: orangered
+    }
+}
+
+@keyframes bigger {
+    0% {
+        font-size: x-large
+    }
+
+    100% {
+        font-size: xx-large
+    }
+}
+
+@keyframes smaller {
+    0% {
+        font-size: xx-large
+    }
+
+    100% {
+        font-size: x-large
+    }
+}
+
+body {
+    background-image: url('/pictures/pexels-tim-gouw-67517.jpg');
+    background-position: top;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+div.dark1 {
+    background-color: transparent;
+    border-color: transparent;
+    backdrop-filter:blur(20px);
+    width:100%;
+    padding: 5px;
+    margin: -10px;
+    z-index: 3;
+}
+
+h1 {
+    position: center;
+    text-align: center;
+    font-size: 125px;
+    font-weight: 250;
+    color: rgba(22, 37, 27,1);
+    animation-name: tracking-in-contract-bck-top;
+    animation-duration: 1s;
+    z-index: 10;
+}
+
+p1 {
+    color: antiquewhite;
+}
+
+p2{
+    color:white;
+}
+
+    p1:in-range {
+        animation-name: bigger;
+        animation-duration: 0.5s;
+        animation-fill-mode:forwards;
+    }
+
+    p1:out-of-range{
+        animation-name: smaller;
+        animation-duration:0.5s;
+        animation-fill-mode:forwards;
+    }
+
+.bn5 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(74, 45, 110);
+    background: #694c8c;
+    cursor: pointer;
+    position: fixed;
+    z-index: 0;
+    border-radius: 10px;
+    width: 100px;
+    float: inherit;
+}
+
+    .bn5:before {
+        content: "";
+        background: linear-gradient( 45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000 );
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowingbn5 20s linear infinite;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+    }
+
+@keyframes glowingbn5 {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.fade {
+    border-image: fill 0 linear-gradient(#0003,#000);
+}
+
+.bn5:active {
+    color: rgba(0,0,0,0.7);
+}
+
+    .bn5:active:after {
+        background: transparent;
+    }
+
+.bn5:hover:before {
+    opacity: 1;
+}
+
+.bn5:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #191919;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.droptn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:transparent;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.bn54 {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 45px;
+    width: 130px;
+    opacity: 1;
+    background-color: rgba(26,26,26,0.7);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+    .bn54 .bn54span {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #481978;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.7px;
+    }
+
+    .bn54:hover {
+        animation: bn54rotate 0.7s ease-in-out both;
+    }
+
+        .bn54:hover .bn54span {
+            animation: bn54storm 0.7s ease-in-out both;
+            animation-delay: 0.06s;
+        }
+
+@keyframes bn54rotate {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+
+    75% {
+        transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes bn54storm {
+    0% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+
+    25% {
+        transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+
+    50% {
+        transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+
+    75% {
+        transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+}
+
+.button-28 {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #16251B;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #16251B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0px,5px,0px,5px;
+    min-height: 5px;
+    min-width: 0;
+    outline: none;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 8%;
+    will-change: transform;
+}
+
+.button-28:disabled {
+    pointer-events: none;
+}
+
+.button-28:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.slide-right {
+    background-color: transparent;
+    color: transparent;
+    animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-100);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.loginpage{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.1);
+    background-color:black;
+}
+
+.loginbox{
+    position:center;
+    background-color: white;
+    height:60%;
+    width:60%;
+}
+
+.linkswrapper{
+    z-index:-1;
+    float:left;
+    height:100%;
+    width:20%;
+    margin:0;
+    padding:5px;
+    background-color:rgba(0,0,0, .6);
+}
+.black-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 15%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust transparency as needed */
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+    .black-overlay a {
+        color: white;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+
+
+.menu{
+    align-items:center;
+    position:center;
+    background-color:transparent;
+    backdrop-filter:blur(5px);
+    width:50%;
+}
+
+    
+

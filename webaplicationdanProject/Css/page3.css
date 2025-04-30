@@ -1,0 +1,13 @@
+﻿body {
+    background:url(/pictures/pexels-krivec-ales-547114.jpg) no-repeat;
+    background-size:cover;
+    position:center;
+}
+.divcheck{
+    background-color:rgba(0,0,0,.6);
+    margin:-9px;
+    padding:5px;
+    color:aqua;
+    width:100%;
+    position:fixed;
+}
