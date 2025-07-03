@@ -41,10 +41,12 @@ namespace webaplicationdanProject.Html
             string email = Request.Form["email"].ToString();
 
             DateTime date = DateTime.Parse(Request.Form["date"].ToString());
+            string d = date.ToString("dd/MM/yyyy");
+            
 
-            if (username != null && password != null && email != null)// && date != null)
+            if (username != null && password != null && email != null && date != null)
             {
-                string sql = "INSERT INTO UsersTbl (Uname,Password,Mail,Birthday) VALUES('" + username + "','" + password + "','" + email + "','" + date + "')";
+                string sql = "INSERT INTO UsersTbl (Uname,Password,Mail,Birthday) VALUES('" + username + "','" + password + "','" + email + "','" + d + "')";
 
                 //string sql = "INSERT INTO UsersTbl (Uname,Password,Mail) VALUES('" + username + "','" + password + "','" + email + "')";
 

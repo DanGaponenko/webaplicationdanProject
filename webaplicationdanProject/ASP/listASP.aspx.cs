@@ -6,9 +6,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace webaplicationdanProject.Html
+namespace webaplicationdanProject.ASP
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class listASP : System.Web.UI.Page
     {
         public string msg = "";//טבלת הנתונים
         public string msg1 = "";// שגיאה הודעת 

@@ -7,18 +7,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="dark1">
-        <a href="loginASP.aspx">
-            <div class="button-28">
-                <p>log-in</p>
-            </div>
-        </a>
-        <a href="registerASP.aspx">
-             <div class="button-28">
-                <p>register</p>
-             </div>
-        </a>
-    </div>
+   
 
     <h1>my site</h1>
 

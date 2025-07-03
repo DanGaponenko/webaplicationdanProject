@@ -185,6 +185,11 @@ h1 {
     animation-duration: 1s;
     z-index: 10;
 }
+h1{
+    position:center;
+    text-align:center;
+    font-size:50px;
+}
 
 p1 {
     color: antiquewhite;

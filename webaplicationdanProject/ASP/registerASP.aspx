@@ -25,9 +25,9 @@
       <div class="input-box">
           <input type="Date" id="date" name="date" placeholder="date"  />
           <i class ='bx bx-calendar'></i>
-      </div>  
+      </div>
       
-      <button type="submit" class="btn"><a href="mainASP.aspx"> register </a> </button>
+      <button type="submit" class="btn"><%--<a href="mainASP.aspx"> register </a>--%> </button>
 
       <div class="register-link">
           <p>already have an account? <a href="loginASP.aspx">login</a></p>

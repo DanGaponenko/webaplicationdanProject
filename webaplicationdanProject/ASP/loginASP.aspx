@@ -12,14 +12,14 @@
     <%--body--%>
 
     <div class="wrapper">
-     <form action="">
+     <form action="loginASP.aspx" runat="server" method="post">
          <h10>Login</h10>
          <div class="input-box">
-             <input type="text" placeholder="username" required />
+             <input type="text" id="username" name="username" placeholder="username" required />
              <i class='bx bxs-user'></i>
          </div>
          <div class="input-box">
-             <input type="password" placeholder="password" required />
+             <input type="password" id="password" name="password" placeholder="password" required />
              <i class='bx bxs-lock'></i>
          </div>     
          <button type="submit" class="btn">login</button>
@@ -28,6 +28,7 @@
              <p>don't have an account? <a href="registerASP.aspx">register</a></p>
          </div>
      </form>
+        <% =msg %>
     </div>
 
 </asp:Content>

@@ -5,13 +5,75 @@
 <html>
 <head runat="server">
     <title></title>
+     <link rel="stylesheet" type="text/css" href="/Css/login_page.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <%--<link rel="stylesheet" type="text/css" href="/Css/main_page.css">--%>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body><center>
+<ul>
+<a href="~/ASP/loginASP.aspx" id="login" runat ="server">
+        <div class="button-28">
+            <p>log-in</p>
+        </div>
+</a>
+<a href="~/ASP/registerASP.aspx" id="register" runat="server">
+     <div class="button-28">
+        <p>register</p>
+     </div>
+</a>
+<a href="~/ASP/DeleteUser.aspx" id="delete" runat ="server">
+    <div class="button-28">
+        <p>delete user</p>
+    </div>
+</a>
+<a href="~/ASP/mainASP.aspx" id="main" runat ="server">
+    <div class="button-28">
+        <p>Home</p>
+    </div>
+</a>
+ <a href="~/ASP/page1ASP.aspx" id="p1" runat ="server">
+        <div class="button-28">
+            <p>page 1</p>
+        </div>
+</a>
+<a href="~/ASP/page2ASP.aspx" id="p2" runat="server">
+     <div class="button-28">
+        <p>page 2</p>
+     </div>
+</a>
+<a href="~/ASP/page3ASP.aspx" id="p3" runat ="server">
+    <div class="button-28">
+        <p>page 3</p>
+    </div>
+</a>
+<a href="~/ASP/UpdateUser.aspx" id="update" runat ="server">
+    <div class="button-28">
+        <p>update</p>
+    </div>
+</a>
+    </center>
+<a href="~/ASP/listASP.aspx" id="list" runat ="server">
+    <div class="button-28">
+        <p>user list</p>
+    </div>
+</a>
+<a href="~/ASP/SearchASP.aspx" id="search" runat ="server">
+    <div class="button-28">
+        <p>search</p>
+    </div>
+</a>
+<a href="~/ASP/LogOut.aspx" id="logout" runat ="server">
+    <div class="button-28">
+        <p>logout</p>
+    </div>
+</a>
+</ul>
    
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
        
 </body>
+
 </html>

@@ -7,12 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace webaplicationdanProject.Html
+namespace webaplicationdanProject.ASP
 {
 
 
-    public partial class WebForm1
+    public partial class searchASP
     {
-        
     }
 }

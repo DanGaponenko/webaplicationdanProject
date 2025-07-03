@@ -81,6 +81,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ASP\DeleteUser.aspx" />
+    <Content Include="ASP\listASP.aspx" />
+    <Content Include="ASP\LogOut.aspx" />
+    <Content Include="ASP\searchASP.aspx" />
     <Content Include="ASP\UpdateUser.aspx" />
     <Content Include="Css\login_page.css" />
     <Content Include="Css\main_page.css" />
@@ -92,6 +95,7 @@
     <Content Include="ASP\page3ASP.aspx" />
     <Content Include="ASP\registerASP.aspx" />
     <Content Include="ASP\loginASP.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="jscode\JavaScript.js" />
     <Content Include="pictures\lalo-hernandez-Amo081zdJsI-unsplash.jpg" />
     <Content Include="pictures\pexels-damon-hall-1705252.jpg" />
@@ -112,6 +116,27 @@
     </Compile>
     <Compile Include="ASP\DeleteUser.aspx.designer.cs">
       <DependentUpon>DeleteUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ASP\listASP.aspx.cs">
+      <DependentUpon>listASP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ASP\listASP.aspx.designer.cs">
+      <DependentUpon>listASP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ASP\LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ASP\LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ASP\searchASP.aspx.cs">
+      <DependentUpon>searchASP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ASP\searchASP.aspx.designer.cs">
+      <DependentUpon>searchASP.aspx</DependentUpon>
     </Compile>
     <Compile Include="ASP\UpdateUser.aspx.cs">
       <DependentUpon>UpdateUser.aspx</DependentUpon>
@@ -162,6 +187,9 @@
     </Compile>
     <Compile Include="ASP\loginASP.aspx.designer.cs">
       <DependentUpon>loginASP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helper.cs" />
     <Compile Include="master.Master.cs">
